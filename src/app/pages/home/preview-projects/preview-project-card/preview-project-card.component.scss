@@ -22,7 +22,7 @@
     img {
         height: 100%;
         max-width: 100%;
-        object-fit: cover;
+        object-fit: contain;
         border-radius: 10px;
     }
 }
@@ -64,6 +64,17 @@
 
 @media screen and (min-width: 50em) {
     .card-container {
-        max-width: 400px;
+        max-width: 420px;
+    }
+
+    .card-content {
+        .title {
+            font-size: 1.3rem;
+        }
+    
+        .desc {
+            font-style: italic;
+            font-size: 1rem;
+        }
     }
 }
