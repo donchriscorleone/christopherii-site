@@ -1,1 +1,10 @@
-<p>button works!</p>
+<button *ngIf="type === 'button'" [attr.type]="type" [attr.aria-label]="text || 'Button'">
+    {{text}}
+</button>
+
+<button *ngIf="type === 'icon'" class="btn-icon" [attr.type]="'button'" [attr.aria-label]="text || 'Icon Button'">
+    <svg class="icon">
+        <use [attr.xlink:href]="'/assets/sprites/icon-utilities.svg#icon-' + iconName"></use>
+    </svg>
+    <span *ngIf="!!text">{{text}}</span>
+</button>

@@ -7,6 +7,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 80em;
+    margin-inline: auto;
 }
 
 ul li:not(:last-child) {
@@ -20,5 +22,61 @@ a {
 
     &:hover {
         color: #fefefe;
+    }
+}
+
+.header-actions {
+    display: none;
+}
+
+app-button::ng-deep {
+    .icon {
+        fill: #f2f2f2;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .header {
+        position: relative;
+    }
+
+    nav {
+        scale: 0;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        background-color: #444;
+        transition: scale .35s;
+        width: 100%;
+        padding: 2rem;
+
+        .list-inline {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+
+            > li {
+                margin-inline: auto;
+            }
+        }
+    }
+
+    .mobile-nav {
+        scale: 1;
+    }
+
+    .header-actions {
+        display: block;
+    }
+
+    app-button {
+        display: none;
+        
+        &.btn-visible {
+            &::ng-deep {
+                display: block;
+            }
+        }
     }
 }

@@ -1,7 +1,7 @@
 <header class="header" id="header">
     <div class="header-wrapper">
-        <a href="#header">Christopher II</a>
-        <nav>
+        <a href="#header" class="header-link">Christopher II</a>
+        <nav class="nav" [class.mobile-nav]="isMenuOpen">
             <ul class="list-inline">
                 <li>
                     <a href="#header">Home</a>
@@ -17,5 +17,10 @@
                 </li>
             </ul>
         </nav>
+
+        <div class="header-actions">
+            <app-button (click)="isMenuOpen = false" type="icon" iconName="close" class="btn-close" [class.btn-visible]="isMenuOpen"></app-button>
+            <app-button (click)="isMenuOpen = true" type="icon" iconName="menu" class="btn-menu" [class.btn-visible]="!isMenuOpen"></app-button>
+        </div>
     </div>
 </header>
