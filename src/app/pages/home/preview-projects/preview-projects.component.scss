@@ -1,0 +1,35 @@
+.container {
+    margin-top: 5rem;
+}
+
+.preview-project-container__wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.wrapper-title {
+    text-align: center;
+    font-size: 1.75rem;
+    color: #333;
+}
+
+.project-cards {
+    display: grid;
+    row-gap: 1.5rem;
+}
+
+@media screen and (min-width: 50em) {
+    .preview-project-container__wrapper {
+        gap: 3rem;
+    }
+
+    .wrapper-title {
+        font-size: 2.25rem;
+    }
+
+    .project-cards {
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1.5rem;
+    }
+}

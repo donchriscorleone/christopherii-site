@@ -3,3 +3,16 @@
     min-height: calc(100vh - 68.5px);
     background-color: #f7f8f7;
 }
+
+.main-wrapper {
+    max-width: 50em;
+    margin-inline: auto;
+    padding: 2.5rem 1rem;
+}
+
+@media screen and (min-width: 50em) {
+    .main-wrapper {
+        max-width: 70em;
+        padding: 5rem 3rem;
+    }
+}

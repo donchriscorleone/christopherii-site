@@ -1,0 +1,15 @@
+<div class="preview-project-container | container">
+    <div class="preview-project-container__wrapper">
+        <div class="wrapper-title">
+            <h2>Projects / Previous Work</h2>
+        </div>
+        <div class="project-cards">
+            <!-- Insert cards here -->
+            <ng-container *ngFor="let card of cards">
+                <preview-project-card [card]="card"></preview-project-card>
+                <preview-project-card [card]="card"></preview-project-card>
+
+            </ng-container>
+        </div>
+    </div>
+</div>

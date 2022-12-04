@@ -1,9 +1,5 @@
-.hero {
-    padding: 2.5rem 1rem;
-}
 
 .hero-wrapper {
-    max-width: 50em;
     display: grid;
     justify-items: center;
     margin-inline: auto;
@@ -71,13 +67,8 @@
 }
 
 @media screen and (min-width: 40em) {
-    .hero {
-        padding: 5rem 2rem;
-    }
-
     .hero-wrapper {
         grid-template-columns: 60% 40%;
-        max-width: 70em;
         align-items: center;
         column-gap: 1rem;
     }
