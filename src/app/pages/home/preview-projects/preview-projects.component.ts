@@ -43,6 +43,13 @@ export class PreviewProjectsComponent implements OnInit {
       github: "https://github.com/donchriscorleone/easybank-landing-page",
       liveSite: "https://donchriscorleone.github.io/easybank-landing-page/",
       imgPath: this.assetPath + "easybanklanding.png",
+    },
+    {
+      title: "Fylo Dark Theme Landing Page",
+      description: "Mobile first approach using plain CSS and JS",
+      github: "https://github.com/donchriscorleone/fylo-dark-theme-landing-page-master",
+      liveSite: "https://donchriscorleone.github.io/fylo-dark-theme-landing-page-master/",
+      imgPath: this.assetPath + "fylodarklanding.png",
     }
   ]
 
